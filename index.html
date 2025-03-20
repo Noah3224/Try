@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Коробкина Александра</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            width: 150px;
+            border-radius: 50%;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        section:target {
+            animation: highlight 1s ease-in-out;
+        }
+
+        @keyframes highlight {
+            from { background-color: #ffffcc; }
+            to { background-color: white; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Коробкин Александр Андреевич</h1>
+        <p>Будущий безработный | Увлечен технологиями</p>
+        <nav>
+            <ul>
+                <li><a href="#about">О себе</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="about">
+        <img src="avatar.jpg" alt="Фото профиля">
+        <h2>О себе</h2>
+        <p>Меня зовут Александр, я родился 4 февраля 2005 года в поселке Красиловка. Увлекаюсь веб-разработкой, дизайном интерфейсов и программированием.</p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Навыки</h2>
+        <ul>
+            <li>HTML, CSS</li>
+            <li>Основы JavaScript</li>
+            <li>Работа с Git</li>
+        </ul>
+    </section>
+
+    <section id="contacts" class="contacts">
+        <h2>Контакты</h2>
+        <p>Email: <a href="mailto:korobkin.aleksandr.05@mail.com">korobkin.aleksandr.05@mail.com</a></p>
+        <p>GitHub: <a href="https://github.com/Noah3224" target="_blank">github.com/Noah3224</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 by Коробкин Александр </p>
+    </footer>
+</body>
+</html>
